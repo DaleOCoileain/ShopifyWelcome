@@ -3447,7 +3447,7 @@ a:not([data-polaris-unstyled]){
 }
 
 .Polaris-Scrollable.Polaris-Scrollable--vertical {
-  height: 175px;
+  height: 100px;
 }
 .Polaris-Scrollable.Polaris-Scrollable--vertical > p {
     font-size: 14px;
