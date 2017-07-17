@@ -3456,6 +3456,9 @@ a:not([data-polaris-unstyled]){
 .Polaris-Button.Top-Left {
   float: left;
 }
+.Polaris-Button.Top-right {
+  float: right;
+}
 
 .footer {
     height: 300px;
