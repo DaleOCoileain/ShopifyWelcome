@@ -3464,6 +3464,9 @@ a:not([data-polaris-unstyled]){
     height: 300px;
     padding: 30px 110px 30px 110px;
 }
+.footer > .Polaris-Card {
+    margin: 0 5.5% 0 5.5%;
+}
 .Polaris-Card__Section.Footer-Info {
     display: flex;
 }
