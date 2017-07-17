@@ -3470,6 +3470,10 @@ a:not([data-polaris-unstyled]){
 .Polaris-Card__Section.Footer-Info {
     display: flex;
 }
+.footer > .Polaris-Card > .Polaris-Card__header {
+    text-align: center;
+    color: gray;
+}
 p#alignLeft {
     width: 50%;
     text-align: left;
