@@ -3475,7 +3475,7 @@ p#alignLeft {
     text-align: left;
 }
 p#alignRight {
-    width: 50%;
+    width: 75%;
     text-align: right;
     margin-left: 50%;
 }
