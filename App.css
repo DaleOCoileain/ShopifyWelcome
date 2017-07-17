@@ -3464,3 +3464,15 @@ a:not([data-polaris-unstyled]){
     height: 300px;
     padding: 30px 110px 30px 110px;
 }
+.Polaris-Card__Section.Footer-Info {
+    display: flex;
+}
+p#alignLeft {
+    width: 50%;
+    text-align: left;
+}
+p#alignRight {
+    width: 50%;
+    text-align: right;
+    margin-left: 50%;
+}
