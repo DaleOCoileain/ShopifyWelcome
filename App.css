@@ -3483,3 +3483,24 @@ p#alignRight {
     text-align: right;
     margin-left: 50%;
 }
+span#red {
+  color:red
+}
+span#blue {
+  color:blue;
+}
+span#green {
+  color:green;
+}
+.bold {
+  font-weight: bold;
+}
+.center {
+  text-align: center;
+}
+h3.center.bold {
+  margin: 15px;
+}
+h4#PolarisContentBox {
+    font-size: 16px;
+}
