@@ -3504,3 +3504,7 @@ h3.center.bold {
 h4#PolarisContentBox {
     font-size: 16px;
 }
+.Polaris-CalloutCard__Content {
+    max-width: 75%;
+    margin: 0px 12.5% 0 12.5%;
+}
