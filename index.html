@@ -1,6 +1,6 @@
 <html>
   <head>
-    <link rel="stylesheet" href="/App.css">
+    <link rel="stylesheet" href="/css.css">
   </head>
 <body>
 
@@ -9,7 +9,7 @@
      <button type="button" class="Polaris-Button Top-Left">
       <span class="Polaris-Button__Content">
        <span>
-        <a href="https://myshopify.com/admin">Back to Shopify</a>
+        <a href="https://collinsofgalway.com">Home</a>
        </span>
       </span>
      </button>
@@ -23,30 +23,62 @@
      </button>
     </center>
 
-    <p class="Shopify-StartUp">So you are ready to start working on your new Store? <br/>
-                                  Well let us start by checking youve done the following steps</p>
+    <p class="Shopify-StartUp">So you are ready to start learning Liquid <br/>
+                                Let's start with the very basics! </p>
      <div class="Polaris-Card">
       <div class="Polaris-Card__Section">
        <div class="Polaris-CalloutCard">
         <div class="Polaris-CalloutCard__Content">
          <div class="Polaris-CalloutCard__Title">
-          <h2 class="Polaris-Heading">Customize the style of your new Store</h2>
-         </div>
-         <div class="Polaris-TextContainer">
-          <p>Upload your stores logo, change colors and fonts, and more.</p>
-         </div>
-         <div class="Polaris-CalloutCard__Buttons">
-          <a class="Polaris-Button" href="https://myshopify.com/admin/themes" data-polaris-unstyled="true" target="_blank">
-           <span class="Polaris-Button__Content">
-           <span>Customize your Theme</span>
-           </span>
-          </a>
-          <a href="https://help.shopify.com/themes/customization" target="_blank">
-          <span class="Polaris-Button__Content">Learn more about customizing checkout</span>
+          <h2 class="Polaris-Heading">
+            <h2 class="center bold">The Basics</h2>
+          </div>
+          <h4 id="PolarisContentBox">
+            Let's first learn how Liquid works! It's a super friendly and easy to learn programming language<br/>
+            Well see how Liquid looks in code. If you see <span id="red">{{</span> or <span id="red">}}</span> that means you've found an Object.<br/>
+            If you see <span id="blue">{%</span> or <span id="blue">%}</span> you've found some tags!<br/>
+            So what's the difference between the two of these? Well <span id="red">{{ }}</span> is for printing information. We'll see that done soon!<br/>
+            <span id="blue">{% %}</span> is used for logic ie. we're asking the code to preform some kind of action. Examples coming below!<br/>
+          </h4>
+            <hr class="hr--large">
+            <h2 class="center bold">Objects</h2>
+          <h4 id="PolarisContentBox">
+            Let's just jump right in an use a very simple example to get started of an object <br/>
+            <span id="red">{{ product.title }}</span> - We've asked the webpage for basic information and to print it!<br/>
+            It's going to return the Title of the product of the page you're on! <br/>
+            We'll go with Shopify T-Shirt for now! <br/>
+          </h4>
+            <hr class="hr--large">
+            <h2 class="center bold">Tags</h2>
+          <h4 id="PolarisContentBox">
+            We'll then look into a tag!
+            <span id="blue">{% assign myName = 'Dale' %}</span> - now I've told myName to become Dale when ever I write it within an Object.<br/>
+            What does that mean?<br/>
+            Simple! When I now write <span id="red">{{ myName }}</span> it will print Dale!<br/>
+          </h4>
+            <hr class="hr--large">
+            <h2 class="center bold">Filters</h2>
+          <h4 id="PolarisContentBox">
+            There are also Filters that can add additional information inside the Object.<br/>
+            Using the above example we can use <span id="red">{{ myName | upcase }}</span> to print DALE instead of Dale.<br/>
+          </h4>
+            <hr class="hr--large">
+            <h2 class="center bold">Working Example</h2>
+          <h4 id="PolarisContentBox">
+            Taking an actual example of where this would all work would be: <br/>
+            <span id="green">{% for product in collections.all.products %}<br/>
+            {{ product.title }}<br/>
+            {{ product.price | money }}<br/>
+            {% endfor %}</span><br/>
+            This will return all of the products in the collection with the handle of 'all' and only display the product titles & prices for those products.<br/>
+            We'll see how for statements work at a later time!<br/>
+          </h4>
+            <img src="https://screenshot.click/18-32-eadcp-mi2lx.png" width="1000px" height="300px" />
+            <hr class="hr--large">
+          <a href="https://help.shopify.com/themes/liquid/basics" target="_blank">
+          <span class="Polaris-Button__Content">Learn more about the basics of Liquid</span>
          </a>
-        </div>
        </div>
-      <img src="https://cdn.shopify.com/s/assets/admin/checkout/settings-customizecart-705f57c725ac05be5a34ec20c05b94298cb8afd10aac7bd9c7ad02030f48cfa0.svg" alt="" className="Polaris-CalloutCard__Image"/>
      </div>
     </div>
    </div>
@@ -57,42 +89,60 @@
      <div class="Polaris-CalloutCard">
       <div class="Polaris-CalloutCard__Content">
        <div class="Polaris-CalloutCard__Title">
-        <h2 class="Polaris-Heading">Check that you have entered Shipping Rates for all of the countries you would like to ship to.</h2>
-       </div>
-       <div class="Polaris-TextContainer">
-        <p>Setting up Shipping is simple. You either set it up by the products weight, or by its price</p>
-       </div>
-       <div class="Polaris-CalloutCard__Buttons">
-        <a class="Polaris-Button" href="https://myshopify.com/admin/settings/shipping" data-polaris-unstyled="true" target="_blank">
-        <span class="Polaris-Button__Content">
-        <span>Customize your Shipping Settings</span>
-        </span>
-        </a>
-        <a href="https://help.shopify.com/manual/shipping" target="_blank">
-        <span class="Polaris-Button__Content">Learn more about setting up your stores Shipping Rates</span>
+        <h2 class="Polaris-Heading">
+          <h2 class="center bold">The Basics - Part 2</h2>
+        </div>
+        <h4 id="PolarisContentBox">
+          Well done for getting this far. It's looking tough already I can tell!<br/>
+          Let's take a moment to sit back and soak the above in, when you're ready we'll continue!<br/>
+        </h4>
+          <hr class="hr--large">
+          <h2 class="center bold">Why Liquid</h2>
+        <h4 id="PolarisContentBox">
+        Liquid is super Simple to write, read and understand. It's Shopify's own coding Language and so many businesses have followed suit!<br/>
+        You know Zendesk? That tool you use all of the time? They've added Liquid to their system, crazy I know!<br/>
+        Let's keep going with examples.
+        </h4>
+          <hr class="hr--large">
+          <h2 class="center bold">Understanding Liquid - for Dummies.</h2>
+        <h4 id="PolarisContentBox">
+        If you're still here well done! Seriously.<br/>
+        Let's test it out. Using my examples from before I want you to chose what you'd like to assign myName and then print it. <br/>
+        <span id="green">{% assign myName = '<input type="text" id="myName"/>' %}
+        <button type="button" class="btn" onclick="myFunction()">
+          Submit
+        </button><br/>
+        <div id="displayNone">{{ myName }} = <span id="myNameAnswer"></span> </div></span>
+        </h4>
+          <hr class="hr--large">
+          <h2 class="center bold">Filters</h2>
+        <h4 id="PolarisContentBox">
+          There are also Filters that can add additional information inside the Object.<br/>
+          Using the above example we can use <span id="red">{{ myName | upcase }}</span> to print DALE instead of Dale.<br/>
+        </h4>
+          <hr class="hr--large">
+          <h2 class="center bold">Working Example</h2>
+        <h4 id="PolarisContentBox">
+          Taking an actual example of where this would all work would be: <br/>
+          <span id="green">{% for product in collections.all.products %}<br/>
+          {{ product.title }}<br/>
+          {{ product.price | money }}<br/>
+          {% endfor %}</span><br/>
+          This will return all of the products in the collection with the handle of 'all' and only display the product titles & prices for those products.<br/>
+          We'll see how for statements work at a later time!<br/>
+        </h4>
+          <hr class="hr--large">
+        <a href="https://help.shopify.com/themes/liquid/basics" target="_blank">
+        <span class="Polaris-Button__Content">Learn more about the basics of Liquid</span>
        </a>
-      </div>
      </div>
-    </div>
-   </div>
+  </div>
+ </div>
+
+
+
   </div>
 
-  <div class="Polaris-Card">
-   <div class="Polaris-Card__Header">
-    <h2 class="Polaris-Heading">Shopifys Promise</h2>
-   </div>
-   <div class="Polaris-Card__Section">
-    <div class="Polaris-Scrollable Polaris-Scrollable--vertical" data-polaris-scrollable="true" >
-      <p>Using Shopify should be rewarding and Profitable, but it should also be enjoyable! Shopify is the platform that allows you to sell your products
-      but it should be something you want to do! If there is anything we at Shopify can do to help you, we would be more than happy to help you, and you
-      can reach out to the Shopify Success Gurus by Phone, Chat or Email at any time. We are here 24/7 for you! Websites dont sleep, and nor do we!
-      Reach out to any of the lines available on <a href="https://support.shopify.com" target="_blank">Our Support Page</a> and we will do our best to help you run your business that bit easier</p>
-    </div>
-   </div>
-  </div>
-      
-  </div>
-  
  <div class="footer">
  <div class="Polaris-Card">
   <div class="Polaris-Card__Header">
@@ -104,6 +154,23 @@
   </div>
  </div>
  </div>
-  
+
 </body>
 </html>
+<style>
+  #displayNone {
+    display: none;
+}
+  input#myName {
+    text-align: center !important;
+}
+</style>
+<script>
+function myFunction(){
+var myName = document.getElementById('myName');
+var myNameAnswer = document.getElementById('myNameAnswer');
+var displayNone = document.getElementById('displayNone')
+ myNameAnswer.innerHTML = myName.value;
+ displayNone.style.display = 'block';
+};
+</script>
