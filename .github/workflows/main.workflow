@@ -13,5 +13,5 @@ action "Slack Notification" {
     SLACK_TITLE = "Post Title",
     SLACK_MESSAGE = "Post Content :rocket:"
   }
-  secrets = ["secrets.slack_secret"]
+  secrets = ["slack_secret"]
 }
