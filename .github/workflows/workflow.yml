@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Slack Notification
         # {org}/{repo}[/path]@ref
-        uses: DaleOCoileain/ShopifyWelcome/.github/workflows/main.workflow
+        uses: ./.github/actions/main.workflow
         id: notification
       - name: Echo the greeting's time
         run: echo 'The time was ${{ steps.notification.outputs.name }}.'
