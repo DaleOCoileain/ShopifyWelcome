@@ -1,14 +1,2 @@
-name: Slack Notification
-on: [push]
-
-jobs:
-  build:
-    name: Push
-    runs-on: ubuntu-latest
-    steps:
-      - name: Slack Notification
-        # {org}/{repo}[/path]@ref
-        uses: ./.github/workflows/main.workflow
-        id: notification
-      - name: Echo the greeting's time
-        run: echo 'The time was ${{ steps.notification.outputs.name }}.'
+steps:
+- uses: actions/checkout@master
