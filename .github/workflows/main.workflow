@@ -4,7 +4,7 @@ workflow "Slack Notification." {
 }
 
 action "Slack Notification" {
-  uses = "./.github/workflows/main.workflow"
+  uses = "./.github/workflows/action.yml"
   env = {
     SLACK_CHANNEL = "ambassabot-operations",
     SLACK_USERNAME = "Ambassabot",
