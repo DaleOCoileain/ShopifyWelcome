@@ -1,0 +1,2 @@
+steps:     
+  - uses: actions/setup-node@master  # Reference a branch
