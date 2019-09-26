@@ -6,7 +6,6 @@ jobs:
     name: Send Message
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout
       - name: Send Message
         uses: ./.github/workflows/main.workflow
         id: flow
